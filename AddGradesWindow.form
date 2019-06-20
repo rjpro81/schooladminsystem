@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="studentLabel" min="-2" max="-2" attributes="0"/>
+                  <Component id="readingAverageLabel" min="-2" max="-2" attributes="0"/>
+                  <Component id="mathAverageLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="scienceAverageLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="socialStudiesAverageLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="submitButton" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="readingAverageTextField" alignment="0" max="32767" attributes="0"/>
+                      <Component id="mathAverageTextField" alignment="0" max="32767" attributes="0"/>
+                      <Component id="scienceAverageTextField" alignment="0" max="32767" attributes="0"/>
+                      <Component id="socialStudiesAverageTextField" alignment="0" max="32767" attributes="0"/>
+                      <Component id="studentComboBox" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="41" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="studentLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="studentComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="readingAverageLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="readingAverageTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="mathAverageLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="mathAverageTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="scienceAverageLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="scienceAverageTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="socialStudiesAverageLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="socialStudiesAverageTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="26" max="32767" attributes="0"/>
+              <Component id="submitButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="studentLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Student:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="readingAverageLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Reading Average:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="mathAverageLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Math Average:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="scienceAverageLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Science Average:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="socialStudiesAverageLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Social Studies Average:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="readingAverageTextField">
+    </Component>
+    <Component class="javax.swing.JTextField" name="mathAverageTextField">
+    </Component>
+    <Component class="javax.swing.JComboBox" name="studentComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="1">
+            <StringItem index="0" value="Select"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="scienceAverageTextField">
+    </Component>
+    <Component class="javax.swing.JTextField" name="socialStudiesAverageTextField">
+    </Component>
+    <Component class="javax.swing.JButton" name="submitButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Submit"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="submitButtonActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
