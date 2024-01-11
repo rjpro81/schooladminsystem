@@ -19,12 +19,14 @@ dependencies {
     // Use JUnit Jupiter for testing.
     testImplementation libs.junit.jupiter
     testImplementation 'org.apache.derby:derby:10.17.1.0'
+    testImplementation 'org.apache.derby:derbytools:10.17.1.0'
 
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
     // This dependency is used by the application.
     implementation libs.guava
     implementation 'org.apache.derby:derby:10.17.1.0'
+    implementation 'org.apache.derby:derbytools:10.17.1.0'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -47,4 +49,8 @@ tasks.named('test') {
 tasks.register('copyRuntimeLibs', Copy){
     from(configurations.runtimeClasspath)
     into("ext")
+}
+
+tasks.named("assemble") {
+    dependsOn(":copyRuntimeLibs")
 }
