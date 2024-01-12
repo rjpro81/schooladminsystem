@@ -13,13 +13,7 @@ import java.util.List;
  */
  
  public class SchoolDemographics{
-     //instance variables
-   private List<Student> studentList;
-   private Student student;
-   private final String URL = "jdbc:derby:schoolDB;create=false";
-   private final String username = "julsaint";
-   private final String password = "julsaint";
-   private int totalEnrollment;
+    private int totalEnrollment;
    private int maleCount;
    private int femaleCount;
    private int caucasianCount;
@@ -28,8 +22,12 @@ import java.util.List;
    
   
    List<Student> getStudentList(){
-        studentList = new ArrayList<>();
-        try(Connection connection = DriverManager.getConnection(URL, username, password)){
+       //instance variables
+       List<Student> studentList = new ArrayList<>();
+       String URL = "jdbc:derby:schoolDB;create=false";
+       String username = "julsaint";
+       String password = "julsaint";
+       try(Connection connection = DriverManager.getConnection(URL, username, password)){
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM students");
             while (resultSet.next()){
@@ -48,8 +46,9 @@ import java.util.List;
         return studentList;
     }
    int getTotalEnrollment(){
-      for (Student student : getStudentList())
-           ++totalEnrollment;
+      for (int i = 0; i <= getStudentList().size(); i++) {
+          totalEnrollment = i;
+      }
       return totalEnrollment;
    }
    int getMaleCount(){

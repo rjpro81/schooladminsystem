@@ -16,7 +16,6 @@ public class AddUserWindow extends JFrame {
     /**
      * Creates new form AddUserFrame
      */
-    private User user;
     public AddUserWindow() {
         super("New User");
         initComponents();
@@ -144,6 +143,7 @@ public class AddUserWindow extends JFrame {
             if (option == 0){
             result = addUserStatement.executeUpdate();
                 if (result > 0){
+                    User user = new User();
                     user.setUsername(usernameTextField.getText());
                     JOptionPane.showMessageDialog(null, "New user added", "New User", JOptionPane.INFORMATION_MESSAGE);
                     this.dispose();
