@@ -621,14 +621,12 @@ public class BusyBeeMainApplicationWindow extends javax.swing.JFrame {
     }
     /**
      * This method retrieves this specific text area from other classes to use in the package
-     * @return 
      */
     static JTextArea getToDoListTextArea(){
         return toDoListTextArea;
     }
     /**
      * This method retrieves this specific text area for other classes to use in the package
-     * @return 
      */
     static JTextArea getCalendarTextArea(){
         return calendarTextArea;

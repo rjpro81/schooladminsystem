@@ -237,7 +237,7 @@ public class AddSchoolWindow extends JFrame {
                 if (result > 0){
                     JOptionPane.showMessageDialog(null, "New school added", "New School", JOptionPane.INFORMATION_MESSAGE);
                     this.dispose();
-                    BusyBeeMainApplicationWindow mainWindow = new BusyBeeMainApplicationWindow();//opens main application window after successful submission
+                    new BusyBeeMainApplicationWindow();//opens main application window after successful submission
                 }
             }
         }
