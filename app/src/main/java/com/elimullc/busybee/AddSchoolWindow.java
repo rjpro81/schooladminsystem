@@ -13,7 +13,7 @@ import javax.swing.JFrame;
  */
 public class AddSchoolWindow extends javax.swing.JFrame {
     //instance variables
-    private final String URL = "jdbc:derby://localhost:1527/schoolDB;create=false";
+    private final String URL = "jdbc:derby:schoolDB;create=false";
     private final String username = "julsaint";
     private final String password = "julsaint";
     private final String addSchool = "INSERT INTO school (schoolName, schoolPrincipal, schoolGradeLevel, schoolType, schoolDistrict, schoolAddress, schoolCity, schoolState, schoolZip, schoolPhoneNumber, schoolEmail) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";

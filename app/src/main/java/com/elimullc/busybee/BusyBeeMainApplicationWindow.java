@@ -20,7 +20,7 @@ import javax.swing.JTextArea;
  */
 public class BusyBeeMainApplicationWindow extends javax.swing.JFrame {
     //instance variables
-    private final String URL = "jdbc:derby://localhost:1527/schoolDB;create=false";
+    private final String URL = "jdbc:derby:schoolDB;create=false";
     private final String username = "julsaint";
     private final String password = "julsaint";
     //these queries are used for the JTree to obtain class information

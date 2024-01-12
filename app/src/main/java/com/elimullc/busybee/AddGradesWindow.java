@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
  */
 public class AddGradesWindow extends javax.swing.JFrame {
     //instance variables
-    private final String URL = "jdbc:derby://localhost:1527/schoolDB;create=false";
+    private final String URL = "jdbc:derby:schoolDB;create=false";
     private final String username = "julsaint";
     private final String password = "julsaint";
     private final String submitGrades = "INSERT INTO grades (studentID, readingAverage, mathAverage, scienceAverage, socialStudiesAverage) VALUES (?, ?, ?, ?, ?)";

@@ -111,7 +111,7 @@ public class LoginWindow extends JFrame {
         ResultSet resultSet;
         String userPassword = null;
         //instance variables
-        String URL = "jdbc:derby:/ext/derby-10.17.1.0.jar;create=true";
+        String URL = "jdbc:derby:schoolDB;create=false";
         String username = "julsaint";
         String password = "julsaint";
         try(Connection connection = DriverManager.getConnection(URL, username, password)){

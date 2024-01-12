@@ -24,7 +24,7 @@ public class AssignStudentWindow extends javax.swing.JFrame {
     private final String getEmployeeIDQuery = "SELECT employeeID FROM faculty";
     private PreparedStatement assignStudentStatement;
     private PreparedStatement getFacultyStatement;
-    private final String URL = "jdbc:derby://localhost:1527/schoolDB;create=false";
+    private final String URL = "jdbc:derby:schoolDB;create=false";
     private final String username = "julsaint";
     private final String password = "julsaint";
     List<Integer> facultyEmployeeID;

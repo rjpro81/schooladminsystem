@@ -130,7 +130,7 @@ public class AddUserWindow extends JFrame {
         //creates a new user and login information
         int result;
         //instance variables
-        String URL = "jdbc:derby:/ext/derby-10.17.1.0.jar;create=true";
+        String URL = "jdbc:derby:schoolDB;create=false";
         String username = "julsaint";
         String password = "julsaint";
         try(Connection connection = DriverManager.getConnection(URL, username, password)){

@@ -16,7 +16,7 @@ import java.util.List;
      //instance variables
    private List<Student> studentList;
    private Student student;
-   private final String URL = "jdbc:derby://localhost:1527/schoolDB;create=false";
+   private final String URL = "jdbc:derby:schoolDB;create=false";
    private final String username = "julsaint";
    private final String password = "julsaint";
    private int totalEnrollment;

@@ -17,7 +17,7 @@ import javax.swing.JFrame;
  * @author Ralph Julsaint
  */
 public class ClassReportWindow extends javax.swing.JFrame {
-    private final String URL = "jdbc:derby://localhost:1527/schoolDB;create=false";
+    private final String URL = "jdbc:derby:schoolDB;create=false";
     private final String username = "julsaint";
     private final String password = "julsaint";
     private final String classReportQuery = "SELECT faculty.empFirstName, faculty.empLastName, students.studentFirstName, students.studentLastName, readingAverage, mathAverage, scienceAverage, socialStudiesAverage, students.studentID, faculty.employeeID FROM grades INNER JOIN classroom ON grades.studentID = classroom.studentID INNER JOIN faculty ON classroom.employeeID = faculty.employeeID INNER JOIN students ON students.studentID = grades.studentID ORDER BY faculty.employeeID ASC";

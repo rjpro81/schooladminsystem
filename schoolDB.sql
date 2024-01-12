@@ -13,6 +13,10 @@ DROP TABLE users;
 DROP TABLE school;
 DROP TABLE students;
 
+CREATE SCHEMA JULSAINT;
+
+SET SCHEMA JULSAINT;
+
 
 CREATE TABLE users (
   username varchar (255) NOT NULL,

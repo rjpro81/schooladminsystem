@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
  * @author ralph
  */
 public class DeleteTaskWindow extends javax.swing.JFrame {
-    private final String URL = "jdbc:derby://localhost:1527/schoolDB;create=false";
+    private final String URL = "jdbc:derby:schoolDB;create=false";
     private final String username = "julsaint";
     private final String password = "julsaint";
     /**
